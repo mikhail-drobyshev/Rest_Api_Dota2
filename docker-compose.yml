@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+  spring-example:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-app:latest
+    ports:
+      - 127.0.0.1:8080:8080
